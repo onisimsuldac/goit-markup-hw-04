@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body class="container">
@@ -28,19 +29,30 @@
         </div>
 
         <div class="section-nav">
-            <a href="info@devstudio.com">info@devstudio.com</a>
-            <a href="tel:+1 212-772-4150">+1 212-772-4150</a>
+            <div>
+                <a href="info@devstudio.com" class="icons"> <svg>
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-envelope-hover"></use>
+                    </svg> info@devstudio.com</a>
+            </div>
+            <div>
+                <a href="tel:+1 212-772-4150" class="icons">
+                    <svg>
+                        <use href="./images/icons.svg/symbol-defs.svg#icon-smartphone"></use>
+                    </svg> +1 212-772-4150</a>
+            </div>
+
+
         </div>
     </header>
 
     <main class="main-menu">
         <section class="main-project">
             <div class="section-button">
-                <button type="button">All</button>
-                <button type="button">Web-sites</button>
-                <button type="button">Apps</button>
-                <button type="button">Design</button>
-                <button type="button">Marketing</button>
+                <button type="button"><span>All</span></button>
+                <button type="button"><span>Web-sites</span></button>
+                <button type="button"><span>Apps</span></button>
+                <button type="button"><span>Design</span></button>
+                <button type="button"><span>Marketing</span></button>
             </div>
 
 
@@ -112,22 +124,50 @@
             </ul>
         </section>
     </main>
-    <div class="footer-sectipn">
-        <footer>
-            <div class="address-bar">
-                <h2><span>Web</span>Studio</h2>
+    <footer class="address-bar">
+        <ul>
+            <li>
+                <h2 class="title-logo"><span>Web</span>Studio</h2>
+                <br>
                 <div class="address-container">
                     <address>
-                        <div class="main-address">
-                            695 Park Ave, NY 10065, USA
-                        </div>
+                        <span> 695 Park Ave, NY 10065, USA</span>
+                        <br>
                         <a href="info@devstudio.com">info@devstudio.com</a>
+                        <br>
                         <a href="tel:+1 212-772-4150">+1 212-772-4150</a>
                     </address>
                 </div>
-            </div>
-        </footer>
-    </div>
+            </li>
+            <li class="link-icons-list">
+                <h2 class="title-icon">Find us on</h2>
+                <br>
+                <div class="icon-footer">
+                    <a href="https://www.instagram.com/" class="icon" aria-label="Instagram">
+                        <svg>
+                            <use href="images/icons.svg/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.twitter.com/" class="icon" aria-label="Twitter">
+                        <svg>
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.facebook.com/" class="icon" aria-label="Facebook">
+                        <svg>
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/" class="icon" aria-label="Linkedin">
+                        <svg>
+                            <use href="./images/icons.svg/symbol-defs.svg#icon-linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+
+    </footer>
 </body>
 
 </html>
